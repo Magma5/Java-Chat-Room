@@ -4,9 +4,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class SocketServer implements Runnable {
-
-
-    @SuppressWarnings("resource")
     @Override
     public void run() {
         ConnectionInfo info = new ConnectionInfo();
@@ -17,13 +14,11 @@ public class SocketServer implements Runnable {
             try {
                 server = new ServerSocket(23596);
                 //create the server
-                System.out.println("listening......");
+                System.out.printf("listening on port %d......", server.getLocalPort());
             } catch (Exception e) {
                 System.out.println("listening error" + e);
             }
             while (true) {
-
-
                 // accept a connection
                 SuperSock socket = new SuperSock();
                 try {
