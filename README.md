@@ -10,7 +10,7 @@ Users can find all others online by click the fresh button on main frame. They c
 
 ## How to Run
 
-compile programs under server and client folder individually with javac command. run with 'java server.loader' first and run 'java client.loader' to create one client at a time.
+compile programs under server and client folder individually with javac command. run with 'java server.Server' first and run 'java client.Client' to create one client at a time.
 
 To get start, client must enter the address of the machine your server program is running on. If you run all programs in one computer, you should enter 127.0.0.1 and default port 23596. The port number can be changed in file SocketServer.java.
 
